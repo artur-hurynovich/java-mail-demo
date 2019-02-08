@@ -1,16 +1,13 @@
 package com.hurynovich.java_mail_demo.service.properties.impl;
 
-import com.hurynovich.java_mail_demo.service.properties.EmailMessageExtractorProperties;
+import com.hurynovich.java_mail_demo.service.properties.EmailServiceProperties;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("mailRuProperties")
 @Data
-public class MailRuEmailMessageExtractorProperties implements EmailMessageExtractorProperties {
-    @Value("${mail.ru.protocol.key}")
-    private String protocolKey;
-    @Value("${mail.ru.protocol.value}")
+public class MailRuEmailServiceProperties implements EmailServiceProperties {
     private String protocolValue;
     @Value("${mail.ru.host}")
     private String host;
@@ -18,6 +15,4 @@ public class MailRuEmailMessageExtractorProperties implements EmailMessageExtrac
     private String user;
     @Value("${mail.ru.password}")
     private String password;
-    @Value("${mail.ru.folder.inbox}")
-    private String folderName;
 }

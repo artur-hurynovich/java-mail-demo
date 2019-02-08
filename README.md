@@ -5,7 +5,7 @@ To use the application, first you should fill corresponding values in applicatio
 - *.user;
 - *.password.
 
-All you need to switch between e-mail services - is just to change @Qualifier annotation value in GenericEmailMessageExtractor class.
+All you need to switch between e-mail services - is just to change @Qualifier annotation value in EmailFolderServiceImpl class constructor.
 
 If you want to add new e-mail service, first, you need to add properties to application.properties file, and then add new implementation of EmailServiceProperties interface.
 

@@ -1,5 +1,5 @@
 # java-mail-demo
-Application demonstrates retrieving e-mails from different e-mail services.
+Application demonstrates retrieving e-mails from different e-mail services (via IMAP).
 
 To use the application, first you should fill corresponding values in application.properties file (according to chosen e-mail service):
 - *.user;
